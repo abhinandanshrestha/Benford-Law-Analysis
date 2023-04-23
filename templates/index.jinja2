@@ -1,0 +1,16 @@
+{% extends 'base.jinja2' %}
+
+{% block content %}
+<br><br><br>
+<h1>{{ title }}</h1>
+<h4>{{ message }}</h4>
+    <br><br><br>
+    <form action="/benford" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+          <label for="csvInput">Select CSV file to upload:</label>
+          <br>
+          <input type="file" name="csvInput" id="csvInput">
+      </div><br>
+      <input type="submit" class="form-btn">Upload</input>
+    </form>
+{% endblock %}
