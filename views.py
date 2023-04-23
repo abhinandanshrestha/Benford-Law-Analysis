@@ -4,6 +4,7 @@ from pyramid.httpexceptions import HTTPBadRequest
 from benfordParams import benfordParams
 from pyramid.response import Response
 import json
+from pyramid.renderers import render_to_response
 
 @view_config(route_name='home', renderer='templates/index.jinja2')
 def home_view(request):
@@ -30,4 +31,5 @@ def benford(request):
                     json.dump(results, f)
                     return Response(json.dumps(results))
             else:
-                return Response("Data doesn't follow Benford's Law.")
+                data={'fail':"Data doesn't follow Benford's Law."}
+                return render_to_response('templates/fail.jinja2', data, request=request)
