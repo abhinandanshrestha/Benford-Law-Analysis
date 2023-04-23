@@ -23,3 +23,4 @@ Once all packages has been installed, run:
 Screenshot of the UI:
 ![Alt Text](img/home.PNG)
 ![Alt Text](img/json.PNG)
+![Alt Text](img/fail.PNG)
