@@ -1,4 +1,4 @@
-# stockpricenotifier
+# Benford-Law-Analysis
 This project was created as a part of Challenge Project for Genese Hiring Process. The application is developed using Python/Pyramid. 
 
 To generate CSV data for testing, run:
